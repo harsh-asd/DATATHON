@@ -7,6 +7,7 @@ import RootCausePanel from "./components/RootCausePanel.jsx";
 import OverviewView from "./components/OverviewView.jsx";
 import InventoryRiskView from "./components/InventoryRiskView.jsx";
 import SettingsView from "./components/SettingsView.jsx";
+import LeakBot from "./components/LeakBot.jsx";
 import { getApiBase } from "./config.js";
 
 export default function App() {
@@ -186,6 +187,9 @@ export default function App() {
         alert={selectedAlert}
         onTakeAction={handleTakeAction}
       />
+
+      {/* Conversational Floating Action Bot */}
+      <LeakBot />
 
     </DashboardLayout>
   );
