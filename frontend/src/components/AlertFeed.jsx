@@ -1,8 +1,7 @@
 import React from "react";
 import AlertCard from "./AlertCard.jsx";
-import { BellRing, Filter, RefreshCw } from "lucide-react";
+import { BellRing, RefreshCw } from "lucide-react";
 
-// 3 Diverse default enterprise alert examples
 export const MOCK_ALERTS = [
   {
     id: "ALT-001",
@@ -70,25 +69,24 @@ export const MOCK_ALERTS = [
 ];
 
 export default function AlertFeed({ alerts = [], onInvestigate, onRefresh, loading }) {
-  // Use passed live alerts or fallback to the 3 mock diverse alerts
   const displayAlerts = alerts.length > 0 ? alerts : MOCK_ALERTS;
 
   return (
-    <div className="flex flex-col h-full bg-slate-900/40 border border-slate-800 rounded-xl overflow-hidden shadow-sm">
+    <div className="flex flex-col h-full bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
       {/* Feed Header */}
-      <div className="flex items-center justify-between px-5 py-4 border-b border-slate-800 bg-slate-900/80">
-        <div className="flex items-center gap-2.5">
-          <div className="p-1.5 rounded-md bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+      <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-white">
+        <div className="flex items-center gap-3">
+          <div className="p-2 rounded-lg bg-blue-50 text-blue-600 border border-blue-100">
             <BellRing className="w-4 h-4" />
           </div>
           <div>
-            <h2 className="text-sm font-semibold text-white flex items-center gap-2">
+            <h2 className="text-sm font-bold text-slate-900 flex items-center gap-2">
               Smart Alert Feed
-              <span className="px-2 py-0.5 rounded-full text-[11px] font-mono bg-rose-500/10 border border-rose-500/20 text-rose-400">
-                {displayAlerts.length} Active
+              <span className="px-2 py-0.5 rounded-full text-xs font-mono font-semibold bg-rose-50 border border-rose-200 text-rose-700">
+                {displayAlerts.length} Flagged
               </span>
             </h2>
-            <p className="text-xs text-slate-400">Real-time performance changes & forecasted operational leaks</p>
+            <p className="text-xs text-slate-500">Real-time performance changes & forecasted operational leaks</p>
           </div>
         </div>
 
@@ -97,17 +95,17 @@ export default function AlertFeed({ alerts = [], onInvestigate, onRefresh, loadi
             <button
               onClick={onRefresh}
               disabled={loading}
-              className="p-1.5 rounded-lg border border-slate-800 bg-slate-800/80 text-slate-300 hover:text-white hover:border-slate-700 transition-colors disabled:opacity-50 cursor-pointer"
+              className="p-2 rounded-lg border border-slate-200 bg-white text-slate-600 hover:text-slate-900 hover:border-slate-300 shadow-2xs transition-colors disabled:opacity-50 cursor-pointer"
               title="Refresh Alert Stream"
             >
-              <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin text-cyan-400" : ""}`} />
+              <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin text-blue-600" : ""}`} />
             </button>
           )}
         </div>
       </div>
 
-      {/* Vertical Scrollable List */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-3.5 max-h-[700px] scrollbar-thin scrollbar-thumb-slate-800">
+      {/* Vertical Scrollable List in Light Grey Canvas */}
+      <div className="flex-1 overflow-y-auto p-5 space-y-3.5 max-h-[700px] bg-slate-50/60">
         {displayAlerts.map((item, idx) => (
           <AlertCard
             key={item.id || item.campaign_id || idx}

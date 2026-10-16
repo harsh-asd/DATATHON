@@ -106,39 +106,39 @@ export default function App() {
           />
         </div>
 
-        {/* Right Info Column: Operations Context & Inventory Risk */}
+        {/* Right Info Column: Operations Context & Inventory Risk (Alloy.ai Light Style) */}
         <div className="space-y-6">
-          <div className="p-5 rounded-xl bg-slate-900/60 border border-slate-800 shadow-sm space-y-4">
-            <h3 className="text-sm font-semibold text-slate-200 uppercase tracking-wider flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-cyan-400" />
+          <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
+            <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-600" />
               Operations Telemetry
             </h3>
             
-            <p className="text-xs text-slate-400 leading-relaxed">
+            <p className="text-xs text-slate-600 leading-relaxed">
               The Money Leak engine cross-references transaction volume against real-time ad spend and inventory stockout signals.
             </p>
 
-            <div className="space-y-2.5 pt-2">
-              <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
-                <span className="text-slate-400">Total Monitored SKUs</span>
-                <span className="font-mono font-bold text-slate-200">250 Products</span>
+            <div className="space-y-2 pt-1">
+              <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                <span className="text-slate-600">Total Monitored SKUs</span>
+                <span className="font-mono font-bold text-slate-900">250 Products</span>
               </div>
-              <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
-                <span className="text-slate-400">Active Ad Campaigns</span>
-                <span className="font-mono font-bold text-slate-200">1,200 Sets</span>
+              <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                <span className="text-slate-600">Active Ad Campaigns</span>
+                <span className="font-mono font-bold text-slate-900">1,200 Sets</span>
               </div>
-              <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-950/60 border border-slate-800/80">
-                <span className="text-slate-400">Analyzed Transactions</span>
-                <span className="font-mono font-bold text-slate-200">18,000 Records</span>
+              <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+                <span className="text-slate-600">Analyzed Transactions</span>
+                <span className="font-mono font-bold text-slate-900">18,000 Records</span>
               </div>
             </div>
           </div>
 
-          <div className="p-5 rounded-xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 space-y-3">
-            <span className="text-xs font-semibold uppercase tracking-wider text-cyan-400 font-mono">
+          <div className="p-5 rounded-xl bg-blue-50/50 border border-blue-200/80 shadow-xs space-y-2">
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-700 font-mono">
               Quick Guide
             </span>
-            <p className="text-xs text-slate-300 leading-relaxed">
+            <p className="text-xs text-slate-700 leading-relaxed">
               Click <strong>"Investigate Drivers"</strong> on any alert card to launch the SHAP Explainability modal, evaluate feature weights, and dispatch autonomous remediation.
             </p>
           </div>

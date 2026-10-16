@@ -4,7 +4,6 @@ import { X, TrendingDown, ArrowRight, ShieldAlert, CheckCircle2, AlertTriangle, 
 export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction }) {
   if (!isOpen || !alert) return null;
 
-  // Extract SHAP explanations and metrics
   const explanations = alert.topShapExplanations || alert.top_shap_explanations || [
     { feature: "Ad Spend", impact: -42.5, direction: "negative", description: "Spend pace exceeded conversion velocity by +42%" },
     { feature: "Click-Through Rate", impact: -18.2, direction: "negative", description: "CTR dropped 18% below category baseline expectation" },
@@ -18,77 +17,77 @@ export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction })
   ];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="relative w-full max-w-4xl bg-slate-900 border border-slate-800 rounded-xl shadow-2xl overflow-hidden text-slate-100">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-xs animate-in fade-in duration-200">
+      <div className="relative w-full max-w-4xl bg-white border border-slate-200 rounded-2xl shadow-2xl overflow-hidden text-slate-900">
         
         {/* Modal Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-800 bg-slate-900/50">
+        <div className="flex items-center justify-between px-6 py-4.5 border-b border-slate-200 bg-slate-50/70">
           <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-400">
+            <div className="p-2 rounded-lg bg-rose-50 border border-rose-200 text-rose-600">
               <ShieldAlert className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-white flex items-center gap-2">
+              <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
                 Root Cause Attribution & Remediation
-                <span className="text-xs px-2 py-0.5 rounded-full font-mono bg-slate-800 border border-slate-700 text-slate-300">
+                <span className="text-xs px-2.5 py-0.5 rounded-full font-mono font-semibold bg-slate-200/80 text-slate-800">
                   {alert.id || alert.campaign_id || "ANOMALY-ALERT"}
                 </span>
               </h3>
-              <p className="text-xs text-slate-400">
-                Machine learning attribution model (SHAP values) translated into operational decisions
+              <p className="text-xs text-slate-500 mt-0.5">
+                Explainable ML (SHAP values) translated into operational decisions
               </p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition-colors"
+            className="p-1.5 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-200/60 transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Modal Body - 2 Column Layout Split */}
-        <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-800 p-6 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-200 p-6 gap-6 bg-white">
           
           {/* Left Column: The Math (SHAP Explainability) */}
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <h4 className="text-sm font-semibold tracking-wide text-slate-200 uppercase flex items-center gap-2">
-                <TrendingDown className="w-4 h-4 text-rose-400" />
+              <h4 className="text-xs font-bold tracking-wider text-slate-500 uppercase flex items-center gap-1.5">
+                <TrendingDown className="w-4 h-4 text-rose-600" />
                 The Math: Attribution Drivers
               </h4>
-              <span className="text-xs text-slate-400 font-mono">SHAP Feature Weights</span>
+              <span className="text-xs font-mono font-semibold text-slate-500">SHAP Feature Weights</span>
             </div>
 
-            <p className="text-xs text-slate-400 leading-relaxed">
+            <p className="text-xs text-slate-600 leading-relaxed">
               These factors pulled actual revenue performance significantly below the predicted statistical baseline:
             </p>
 
-            <div className="space-y-3 pt-2">
+            <div className="space-y-3 pt-1">
               {explanations.map((exp, idx) => {
                 const impactAbs = Math.min(100, Math.abs(exp.impact || (idx === 0 ? 65 : idx === 1 ? 40 : 25)));
                 const isNegative = (exp.direction === "negative") || (exp.impact < 0);
 
                 return (
-                  <div key={idx} className="p-3 rounded-lg bg-slate-950/50 border border-slate-800/80 space-y-1.5">
+                  <div key={idx} className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
                     <div className="flex justify-between items-center text-xs">
-                      <span className="font-medium text-slate-200">{exp.feature}</span>
-                      <span className={`font-mono font-semibold ${isNegative ? "text-rose-400" : "text-emerald-400"}`}>
+                      <span className="font-semibold text-slate-800">{exp.feature}</span>
+                      <span className={`font-mono font-bold ${isNegative ? "text-rose-600" : "text-emerald-600"}`}>
                         {isNegative ? `-${impactAbs}% drag` : `+${impactAbs}% boost`}
                       </span>
                     </div>
 
-                    {/* Horizontal Bar Chart representation */}
-                    <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                    {/* Horizontal Bar Chart */}
+                    <div className="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
                       <div
                         className={`h-full rounded-full transition-all duration-500 ${
-                          isNegative ? "bg-rose-500 shadow-[0_0_10px_rgba(244,63,94,0.5)]" : "bg-emerald-500"
+                          isNegative ? "bg-rose-500" : "bg-emerald-500"
                         }`}
                         style={{ width: `${Math.max(15, impactAbs)}%` }}
                       />
                     </div>
 
-                    <p className="text-[11px] text-slate-400 pt-0.5">
+                    <p className="text-[11px] text-slate-500 pt-0.5">
                       {exp.description || `${exp.feature} significantly skewed baseline return.`}
                     </p>
                   </div>
@@ -96,9 +95,9 @@ export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction })
               })}
             </div>
 
-            <div className="p-3 rounded-lg bg-slate-950 border border-slate-800/60 text-xs flex justify-between">
-              <span className="text-slate-400">Net Performance Gap:</span>
-              <span className="font-mono font-bold text-rose-400">
+            <div className="p-3.5 rounded-xl bg-rose-50 border border-rose-200 text-xs flex justify-between items-center">
+              <span className="font-medium text-rose-800">Net Performance Gap:</span>
+              <span className="font-mono font-bold text-rose-700 text-sm">
                 {alert.varianceFormatted || (alert.variance ? `-$${Math.abs(alert.variance).toLocaleString()}` : "-$1,800 (-36%)")}
               </span>
             </div>
@@ -107,32 +106,32 @@ export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction })
           {/* Right Column: The Action (Next Best Action Card) */}
           <div className="space-y-4 md:pl-2">
             <div className="flex items-center justify-between">
-              <h4 className="text-sm font-semibold tracking-wide text-slate-200 uppercase flex items-center gap-2">
-                <Zap className="w-4 h-4 text-cyan-400" />
+              <h4 className="text-xs font-bold tracking-wider text-slate-500 uppercase flex items-center gap-1.5">
+                <Zap className="w-4 h-4 text-blue-600" />
                 The Action: Prescribed Interventions
               </h4>
-              <span className="text-xs px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">
+              <span className="text-xs px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 font-semibold border border-blue-200">
                 High Confidence
               </span>
             </div>
 
-            <div className="p-4 rounded-xl bg-gradient-to-b from-cyan-950/20 to-slate-950/40 border border-cyan-900/40 space-y-3">
-              <p className="text-xs text-slate-300 leading-relaxed font-medium">
+            <div className="p-4.5 rounded-xl bg-blue-50/40 border border-blue-100 space-y-3">
+              <p className="text-xs text-slate-700 font-semibold">
                 Autonomous recommendation to immediately remediate margin erosion:
               </p>
 
               <div className="space-y-2.5">
                 {suggestedActions.map((action, aIdx) => (
-                  <div key={aIdx} className="flex items-start gap-2.5 text-xs text-slate-300">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                    <span>{action}</span>
+                  <div key={aIdx} className="flex items-start gap-2.5 text-xs text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
+                    <span className="leading-relaxed">{action}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="p-3 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs flex items-center gap-2">
-              <AlertTriangle className="w-4 h-4 shrink-0 text-amber-400" />
+            <div className="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-2">
+              <AlertTriangle className="w-4 h-4 shrink-0 text-amber-600" />
               <span>Projected impact: Stems ~$3,400 weekly cash burn across affected channel.</span>
             </div>
 
@@ -144,7 +143,7 @@ export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction })
                   else alert("Remediation plan applied: Campaign spend capped and budget reallocated.");
                   onClose();
                 }}
-                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold rounded-lg shadow-lg shadow-cyan-500/20 transition-all cursor-pointer text-sm"
+                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-sm shadow-blue-500/20 transition-all cursor-pointer text-sm"
               >
                 <span>Take Action (Apply Remediation)</span>
                 <ArrowRight className="w-4 h-4" />
@@ -154,10 +153,10 @@ export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction })
         </div>
 
         {/* Modal Footer */}
-        <div className="px-6 py-3 border-t border-slate-800 bg-slate-950/40 text-right">
+        <div className="px-6 py-3 border-t border-slate-200 bg-slate-50/80 text-right">
           <button
             onClick={onClose}
-            className="px-4 py-1.5 text-xs text-slate-400 hover:text-white transition-colors cursor-pointer"
+            className="px-4 py-1.5 text-xs font-medium text-slate-500 hover:text-slate-800 transition-colors cursor-pointer"
           >
             Dismiss
           </button>
