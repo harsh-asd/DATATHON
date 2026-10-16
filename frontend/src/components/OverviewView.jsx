@@ -1,5 +1,6 @@
 import React from "react";
 import { Download, TrendingDown, AlertTriangle, ArrowUpRight, ShieldCheck, Pause, Play, BarChart3, Layers } from "lucide-react";
+import { RevenueDivergenceChart, CategoryPerformanceChart } from "./Charts.jsx";
 
 export default function OverviewView({ alerts, summary, onInvestigate, onTogglePause }) {
   // Compute category leak totals
@@ -59,36 +60,12 @@ export default function OverviewView({ alerts, summary, onInvestigate, onToggleP
         </button>
       </div>
 
-      {/* Visual Charts Grid: Leaks by Category & Channel */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
-        {/* Category Leak Breakdown */}
-        <div className="p-6 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">
-          <div className="flex items-center justify-between">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2">
-              <BarChart3 className="w-4 h-4 text-blue-600" />
-              Capital Drain by Product Category
-            </h3>
-            <span className="text-xs font-mono font-semibold text-rose-600">Total: -$462.0k</span>
-          </div>
+      {/* 1. Interactive Divergence Line/Area Chart */}
+      <RevenueDivergenceChart />
 
-          <div className="space-y-3 pt-1">
-            {categoryLeaks.map((cat, i) => (
-              <div key={i} className="space-y-1">
-                <div className="flex justify-between items-center text-xs">
-                  <span className="font-semibold text-slate-800">{cat.name} ({cat.channel})</span>
-                  <span className="font-mono font-bold text-slate-900">-${cat.leak.toLocaleString()}</span>
-                </div>
-                <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                  <div
-                    className={`h-full rounded-full ${cat.color}`}
-                    style={{ width: `${cat.percentage}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* 2. Visual Charts Grid: Category Benchmarks & Channel Health */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <CategoryPerformanceChart />
 
         {/* Channel Health Matrix */}
         <div className="p-6 bg-white border border-slate-200 rounded-xl shadow-xs space-y-4">

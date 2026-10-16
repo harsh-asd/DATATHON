@@ -98,6 +98,30 @@ export default function InventoryRiskView({ onTogglePauseCategory }) {
         </button>
       </div>
 
+      {/* Visual Stockout & Lead Time Telemetry Matrix */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+          <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1">Stockout Ad Waste</span>
+          <div className="text-2xl font-bold font-mono text-rose-600">$48,200</div>
+          <span className="text-xs text-rose-700/80 mt-1 block">Live ad burn on 0-stock SKUs</span>
+        </div>
+        <div className="p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+          <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1">Critical SKUs</span>
+          <div className="text-2xl font-bold font-mono text-rose-700">14 Products</div>
+          <span className="text-xs text-slate-500 mt-1 block">Stockout flag active</span>
+        </div>
+        <div className="p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+          <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1">Avg Vendor Delay</span>
+          <div className="text-2xl font-bold font-mono text-amber-700">+8.4 Days</div>
+          <span className="text-xs text-amber-800/80 mt-1 block">Exceeds standard reorder buffer</span>
+        </div>
+        <div className="p-4 bg-white border border-slate-200 rounded-xl shadow-xs">
+          <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1">Audited Records</span>
+          <div className="text-2xl font-bold font-mono text-slate-900">5,000 Rows</div>
+          <span className="text-xs text-emerald-600 font-semibold mt-1 block">Warehouse sync healthy</span>
+        </div>
+      </div>
+
       {/* Risk Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {risks.map((item, idx) => {

@@ -1,5 +1,6 @@
 import React from "react";
 import { X, TrendingDown, ArrowRight, ShieldAlert, CheckCircle2, AlertTriangle, Zap } from "lucide-react";
+import { ShapWaterfallChart } from "./Charts.jsx";
 
 export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction }) {
   if (!isOpen || !alert) return null;
@@ -18,10 +19,10 @@ export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction })
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-xs animate-in fade-in duration-200">
-      <div className="relative w-full max-w-4xl bg-white border border-slate-200 rounded-2xl shadow-2xl overflow-hidden text-slate-900">
+      <div className="relative w-full max-w-4xl max-h-[90vh] flex flex-col bg-white border border-slate-200 rounded-2xl shadow-2xl overflow-hidden text-slate-900">
         
         {/* Modal Header */}
-        <div className="flex items-center justify-between px-6 py-4.5 border-b border-slate-200 bg-slate-50/70">
+        <div className="flex items-center justify-between px-6 py-4.5 border-b border-slate-200 bg-slate-50/70 shrink-0">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg bg-rose-50 border border-rose-200 text-rose-600">
               <ShieldAlert className="w-5 h-5" />
@@ -47,7 +48,7 @@ export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction })
         </div>
 
         {/* Modal Body - 2 Column Layout Split */}
-        <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-200 p-6 gap-6 bg-white">
+        <div className="flex-1 overflow-y-auto grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-200 p-6 gap-6 bg-white">
           
           {/* Left Column: The Math (SHAP Explainability) */}
           <div className="space-y-4">
@@ -56,8 +57,11 @@ export default function RootCausePanel({ isOpen, onClose, alert, onTakeAction })
                 <TrendingDown className="w-4 h-4 text-rose-600" />
                 The Math: Attribution Drivers
               </h4>
-              <span className="text-xs font-mono font-semibold text-slate-500">SHAP Feature Weights</span>
+              <span className="text-xs font-mono font-semibold text-slate-500">SHAP Waterfall</span>
             </div>
+
+            {/* Visual Waterfall decomposition chart */}
+            <ShapWaterfallChart alert={alert} />
 
             <p className="text-xs text-slate-600 leading-relaxed">
               These factors pulled actual revenue performance significantly below the predicted statistical baseline:
