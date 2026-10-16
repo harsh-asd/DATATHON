@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DashboardLayout from "./components/DashboardLayout.jsx";
+import HomePage from "./components/HomePage.jsx";
 import AlertFeed, { MOCK_ALERTS } from "./components/AlertFeed.jsx";
 import RootCausePanel from "./components/RootCausePanel.jsx";
 import OverviewView from "./components/OverviewView.jsx";
@@ -7,7 +8,7 @@ import InventoryRiskView from "./components/InventoryRiskView.jsx";
 import SettingsView from "./components/SettingsView.jsx";
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState("anomalies");
+  const [activeTab, setActiveTab] = useState("home");
   const [alerts, setAlerts] = useState([]);
   const [summary, setSummary] = useState(null);
   const [selectedAlert, setSelectedAlert] = useState(null);
@@ -144,6 +145,11 @@ export default function App() {
           <div className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
           <span>{notification}</span>
         </div>
+      )}
+
+      {/* Tab 0: Enterprise Homepage */}
+      {activeTab === "home" && (
+        <HomePage onLaunchConsole={() => setActiveTab("overview")} />
       )}
 
       {/* Tab 1: Executive Overview */}

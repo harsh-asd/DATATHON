@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Home,
   LayoutDashboard,
   AlertOctagon,
   Boxes,
@@ -17,6 +18,7 @@ export default function DashboardLayout({ children, activeTab, onTabChange }) {
   const [collapsed, setCollapsed] = useState(false);
 
   const navItems = [
+    { id: "home", label: "Home", icon: Home },
     { id: "overview", label: "Overview", icon: LayoutDashboard },
     { id: "anomalies", label: "Anomalies", icon: AlertOctagon, badge: "3 New" },
     { id: "inventory", label: "Inventory Risk", icon: Boxes },
@@ -34,7 +36,11 @@ export default function DashboardLayout({ children, activeTab, onTabChange }) {
       >
         {/* Brand / Logo */}
         <div className="flex items-center justify-between h-16 px-4 border-b border-slate-200 bg-white">
-          <div className="flex items-center gap-3 overflow-hidden">
+          <div 
+            onClick={() => onTabChange && onTabChange("home")}
+            className="flex items-center gap-3 overflow-hidden cursor-pointer hover:opacity-85 transition-opacity"
+            title="Go to Homepage"
+          >
             <div className="p-2 rounded-lg bg-blue-600 text-white shrink-0 shadow-sm shadow-blue-500/20">
               <Zap className="w-5 h-5" />
             </div>
@@ -119,80 +125,82 @@ export default function DashboardLayout({ children, activeTab, onTabChange }) {
         </header>
 
         {/* Scrollable Main Operations Body */}
-        <main className="flex-1 overflow-y-auto px-8 py-6 space-y-6">
+        <main className={`flex-1 overflow-y-auto ${activeTab === "home" ? "p-0" : "px-8 py-6 space-y-6"}`}>
           
-          {/* 3. Hero Section (Alloy.ai Light KPI Cards) */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            
-            {/* Card 1: Predicted Daily Revenue (Neutral color) */}
-            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-xs hover:border-slate-300 transition-all">
-              <div className="flex items-center justify-between text-xs font-semibold text-slate-500 tracking-wider uppercase mb-2">
-                <span>PREDICTED DAILY REVENUE</span>
-                <span className="p-1 rounded bg-slate-100 text-slate-600">
-                  <Activity className="w-3.5 h-3.5" />
-                </span>
+          {/* 3. Hero Section (Alloy.ai Light KPI Cards) - Shown on Operations Tabs */}
+          {activeTab !== "home" && (
+            <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              
+              {/* Card 1: Predicted Daily Revenue (Neutral color) */}
+              <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-xs hover:border-slate-300 transition-all">
+                <div className="flex items-center justify-between text-xs font-semibold text-slate-500 tracking-wider uppercase mb-2">
+                  <span>PREDICTED DAILY REVENUE</span>
+                  <span className="p-1 rounded bg-slate-100 text-slate-600">
+                    <Activity className="w-3.5 h-3.5" />
+                  </span>
+                </div>
+                <div className="text-3xl font-bold font-mono text-slate-900 tracking-tight">
+                  $184,250
+                </div>
+                <div className="mt-2 text-xs text-slate-500 flex items-center gap-1.5">
+                  <span className="font-medium text-slate-700">Statistical Baseline</span>
+                  <span>•</span>
+                  <span>Random Forest model</span>
+                </div>
               </div>
-              <div className="text-3xl font-bold font-mono text-slate-900 tracking-tight">
-                $184,250
-              </div>
-              <div className="mt-2 text-xs text-slate-500 flex items-center gap-1.5">
-                <span className="font-medium text-slate-700">Statistical Baseline</span>
-                <span>•</span>
-                <span>Random Forest model</span>
-              </div>
-            </div>
 
-            {/* Card 2: Actual Revenue (Showing a negative trend) */}
-            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-xs hover:border-slate-300 transition-all">
-              <div className="flex items-center justify-between text-xs font-semibold text-slate-500 tracking-wider uppercase mb-2">
-                <span>ACTUAL REVENUE</span>
-                <span className="p-1 rounded bg-rose-50 text-rose-600">
+              {/* Card 2: Actual Revenue (Showing a negative trend) */}
+              <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-xs hover:border-slate-300 transition-all">
+                <div className="flex items-center justify-between text-xs font-semibold text-slate-500 tracking-wider uppercase mb-2">
+                  <span>ACTUAL REVENUE</span>
+                  <span className="p-1 rounded bg-rose-50 text-rose-600">
+                    <TrendingDown className="w-3.5 h-3.5" />
+                  </span>
+                </div>
+                <div className="text-3xl font-bold font-mono text-rose-600 tracking-tight">
+                  $129,480
+                </div>
+                <div className="mt-2 flex items-center gap-1.5 text-xs font-semibold font-mono text-rose-600">
                   <TrendingDown className="w-3.5 h-3.5" />
-                </span>
+                  <span>-$54,770 (-29.7% drag)</span>
+                </div>
               </div>
-              <div className="text-3xl font-bold font-mono text-rose-600 tracking-tight">
-                $129,480
-              </div>
-              <div className="mt-2 flex items-center gap-1.5 text-xs font-semibold font-mono text-rose-600">
-                <TrendingDown className="w-3.5 h-3.5" />
-                <span>-$54,770 (-29.7% drag)</span>
-              </div>
-            </div>
 
-            {/* Card 3: Active Stockout Risks (Highlighted in soft red) */}
-            <div className="p-5 rounded-xl bg-rose-50/40 border border-rose-200/80 shadow-xs hover:border-rose-300 transition-all">
-              <div className="flex items-center justify-between text-xs font-semibold text-rose-700 tracking-wider uppercase mb-2">
-                <span>ACTIVE STOCKOUT RISKS</span>
-                <span className="p-1 rounded bg-rose-100 text-rose-700 border border-rose-200">
-                  <Boxes className="w-3.5 h-3.5" />
-                </span>
+              {/* Card 3: Active Stockout Risks (Highlighted in soft red) */}
+              <div className="p-5 rounded-xl bg-rose-50/40 border border-rose-200/80 shadow-xs hover:border-rose-300 transition-all">
+                <div className="flex items-center justify-between text-xs font-semibold text-rose-700 tracking-wider uppercase mb-2">
+                  <span>ACTIVE STOCKOUT RISKS</span>
+                  <span className="p-1 rounded bg-rose-100 text-rose-700 border border-rose-200">
+                    <Boxes className="w-3.5 h-3.5" />
+                  </span>
+                </div>
+                <div className="text-3xl font-bold font-mono text-rose-700 tracking-tight">
+                  14 SKUs Critical
+                </div>
+                <div className="mt-2 flex items-center gap-1.5 text-xs text-rose-800 font-medium font-mono">
+                  <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping" />
+                  <span>Impacts $38.4k ad traffic</span>
+                </div>
               </div>
-              <div className="text-3xl font-bold font-mono text-rose-700 tracking-tight">
-                14 SKUs Critical
-              </div>
-              <div className="mt-2 flex items-center gap-1.5 text-xs text-rose-800 font-medium font-mono">
-                <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping" />
-                <span>Impacts $38.4k ad traffic</span>
-              </div>
-            </div>
 
-            {/* Card 4: Campaign Efficiency Drop (Highlighted in amber) */}
-            <div className="p-5 rounded-xl bg-amber-50/40 border border-amber-200/80 shadow-xs hover:border-amber-300 transition-all">
-              <div className="flex items-center justify-between text-xs font-semibold text-amber-800 tracking-wider uppercase mb-2">
-                <span>CAMPAIGN EFFICIENCY DROP</span>
-                <span className="p-1 rounded bg-amber-100 text-amber-800 border border-amber-200">
-                  <AlertTriangle className="w-3.5 h-3.5" />
-                </span>
+              {/* Card 4: Campaign Efficiency Drop (Highlighted in amber) */}
+              <div className="p-5 rounded-xl bg-amber-50/40 border border-amber-200/80 shadow-xs hover:border-amber-300 transition-all">
+                <div className="flex items-center justify-between text-xs font-semibold text-amber-800 tracking-wider uppercase mb-2">
+                  <span>CAMPAIGN EFFICIENCY DROP</span>
+                  <span className="p-1 rounded bg-amber-100 text-amber-800 border border-amber-200">
+                    <AlertTriangle className="w-3.5 h-3.5" />
+                  </span>
+                </div>
+                <div className="text-3xl font-bold font-mono text-amber-800 tracking-tight">
+                  -41.2% ROAS
+                </div>
+                <div className="mt-2 text-xs text-amber-800 font-medium font-mono">
+                  <span>High spend on low conversions</span>
+                </div>
               </div>
-              <div className="text-3xl font-bold font-mono text-amber-800 tracking-tight">
-                -41.2% ROAS
-              </div>
-              <div className="mt-2 text-xs text-amber-800 font-medium font-mono">
-                <span>High spend on low conversions</span>
-              </div>
-            </div>
 
-          </section>
+            </section>
+          )}
 
           {/* Dynamic Content Body */}
           <div className="w-full">
