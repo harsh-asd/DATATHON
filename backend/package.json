@@ -1,0 +1,16 @@
+{
+  "name": "the-money-leak-backend",
+  "version": "1.0.0",
+  "description": "Express Backend for The Money Leak anomaly detection dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.1"
+  }
+}
