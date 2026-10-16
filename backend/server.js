@@ -1,6 +1,6 @@
 /**
- * The Money Leak - Bulletproof API Bridge (Node.js/Express)
- * =========================================================
+ * LeakOps - Bulletproof API Bridge (Node.js/Express)
+ * ==================================================
  * Role: Expert Backend Engineer
  * Upgraded for Hackathon Round 2 Submission:
  * - The Route (/api/anomalies): Asynchronous route querying MongoDB for the latest 5 campaign records.
@@ -436,5 +436,5 @@ app.post('/api/campaigns/:id/shift-budget', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`[Backend] Bulletproof API Bridge running on http://localhost:${PORT}`);
+  console.log(`[Backend] LeakOps API Bridge running on http://localhost:${PORT}`);
 });

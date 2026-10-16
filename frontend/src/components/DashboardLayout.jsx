@@ -46,7 +46,7 @@ export default function DashboardLayout({ children, activeTab, onTabChange }) {
             </div>
             {!collapsed && (
               <div className="leading-tight truncate">
-                <span className="font-bold tracking-tight text-slate-900 text-base">THE MONEY LEAK</span>
+                <span className="font-bold tracking-tight text-slate-900 text-base">LEAKOPS</span>
                 <span className="block text-[10px] text-blue-600 font-semibold tracking-wider uppercase">Commerce Intelligence</span>
               </div>
             )}
@@ -100,7 +100,7 @@ export default function DashboardLayout({ children, activeTab, onTabChange }) {
         <header className="h-16 border-b border-slate-200 bg-white px-6 flex items-center justify-between gap-4 shrink-0 shadow-[0_1px_2px_rgba(0,0,0,0.02)]">
           <div className="flex items-center gap-4 min-w-0">
             <h1 className="text-lg font-bold text-slate-900 tracking-tight shrink-0">
-              The Money Leak
+              LeakOps
             </h1>
             
             {/* Highly Visible Disclaimer Banner (Light Clear Style) */}

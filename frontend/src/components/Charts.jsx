@@ -209,7 +209,7 @@ export function RevenueDivergenceChart({ data }) {
 
           <div className="flex items-center gap-1 font-mono font-bold text-rose-600">
             <TrendingDown className="w-3.5 h-3.5" />
-            <span>Money Leak: -${activePoint.leak.toLocaleString()}</span>
+            <span>LeakOps Deficit: -${activePoint.leak.toLocaleString()}</span>
           </div>
         </div>
       </div>

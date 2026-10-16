@@ -1,6 +1,6 @@
 """
-The Money Leak - ML Evaluation & SHAP Attribution Microservice (Round 2 Submission)
-==================================================================================
+LeakOps - ML Evaluation & SHAP Attribution Microservice (Round 2 Submission)
+============================================================================
 Role: Expert Data Scientist & Backend Engineer
 Engineered for DATATHON 2026:
 - Zero Data Leakage: Strictly temporal train/test split via train_test_split(shuffle=False)
@@ -22,7 +22,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 import shap
 
 app = FastAPI(
-    title="The Money Leak - ML Evaluation & SHAP API",
+    title="LeakOps - ML Evaluation & SHAP API",
     description="Production-grade anomaly detection and explainable attribution engine",
     version="2.0.0"
 )

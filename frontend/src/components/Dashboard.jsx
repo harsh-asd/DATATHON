@@ -1,6 +1,6 @@
 /**
- * The Money Leak - Dynamic "Why This Is Flagged" UI (React)
- * ========================================================
+ * LeakOps - Dynamic "Why This Is Flagged" UI (React)
+ * ==================================================
  * Role: Expert Frontend Developer
  * Upgraded for Hackathon Round 2 Submission:
  * - Data Fetching: Uses useEffect to poll http://localhost:3000/api/anomalies every 5 seconds.

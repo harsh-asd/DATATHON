@@ -38,7 +38,7 @@ export default function HomePage({ onLaunchConsole }) {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            <strong>The Money Leak</strong> cross-references 18,000 transaction records and live warehouse inventory telemetry against 1,200 ad campaigns to isolate capital drain and explain root causes with machine learning.
+            <strong>LeakOps</strong> cross-references 18,000 transaction records and live warehouse inventory telemetry against 1,200 ad campaigns to isolate capital drain and explain root causes with machine learning.
           </p>
 
           {/* CTA Buttons */}
@@ -91,7 +91,7 @@ export default function HomePage({ onLaunchConsole }) {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
             <div>
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider font-mono">Live Detection Teaser</span>
-              <h2 className="text-lg font-bold text-slate-900 mt-1">Autonomous Money Leak Attribution in Action</h2>
+              <h2 className="text-lg font-bold text-slate-900 mt-1">Autonomous LeakOps Attribution in Action</h2>
             </div>
             <span className="self-start sm:self-auto px-3 py-1 rounded-full text-xs font-mono font-bold bg-rose-50 text-rose-700 border border-rose-200">
               -$194,454 Active Capital Drain
@@ -252,7 +252,7 @@ export default function HomePage({ onLaunchConsole }) {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-            Ready to isolate and remediate retail money leaks?
+            Ready to isolate and remediate retail revenue leaks with LeakOps?
           </h2>
 
           <p className="text-sm text-slate-300 leading-relaxed">
