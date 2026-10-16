@@ -189,7 +189,7 @@ export default function App() {
       />
 
       {/* Conversational Floating Action Bot */}
-      <LeakBot />
+      <LeakBot anomalies={alerts} />
 
     </DashboardLayout>
   );
