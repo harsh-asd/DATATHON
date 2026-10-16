@@ -7,6 +7,7 @@ import RootCausePanel from "./components/RootCausePanel.jsx";
 import OverviewView from "./components/OverviewView.jsx";
 import InventoryRiskView from "./components/InventoryRiskView.jsx";
 import SettingsView from "./components/SettingsView.jsx";
+import { getApiBase } from "./config.js";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("home");
@@ -17,7 +18,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [notification, setNotification] = useState(null);
 
-  const API_BASE = "http://localhost:3000";
+  const API_BASE = getApiBase();
 
   // Fetch Summary KPIs
   const fetchSummary = async () => {

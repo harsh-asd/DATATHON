@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/api/campaigns/:id/toggle-pause",
+      "destination": "/api/campaigns?id=:id&action=toggle-pause"
+    },
+    {
+      "source": "/api/campaigns/:id/shift-budget",
+      "destination": "/api/campaigns?id=:id&action=shift-budget"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

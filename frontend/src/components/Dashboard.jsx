@@ -29,6 +29,7 @@ import {
   Layers,
   DollarSign
 } from "lucide-react";
+import { getApiBase } from "../config.js";
 
 export default function Dashboard() {
   const [campaigns, setCampaigns] = useState([]);
@@ -38,7 +39,8 @@ export default function Dashboard() {
   const [metrics, setMetrics] = useState({ mae: 50594.87, rmse: 77637.59 });
   const [isRefreshing, setIsRefreshing] = useState(false);
 
-  const API_URL = "http://localhost:3000/api/anomalies";
+  const apiBase = getApiBase();
+  const API_URL = `${apiBase}/api/anomalies`;
 
   // 1. Data Fetching: Use useEffect to poll http://localhost:3000/api/anomalies
   const fetchAnomalies = async (manual = false) => {
@@ -81,10 +83,10 @@ export default function Dashboard() {
     setResolvedCampaigns(prev => new Set(prev).add(campaignId));
 
     try {
-      await fetch(`http://localhost:3000/api/campaigns/${campaignId}/toggle-pause`, {
+      await fetch(`${apiBase}/api/campaigns/${campaignId}/toggle-pause`, {
         method: "POST"
       });
-      await fetch(`http://localhost:3000/api/campaigns/${campaignId}/shift-budget`, {
+      await fetch(`${apiBase}/api/campaigns/${campaignId}/shift-budget`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount: 500 })

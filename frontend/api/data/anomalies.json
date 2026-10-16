@@ -1,0 +1,3202 @@
+[
+  {
+    "campaign_id": "CA1151",
+    "name": "Beauty - Store Set",
+    "date": "2025-09-12",
+    "channel": "Store",
+    "category": "Beauty",
+    "spend": 4218.29,
+    "impressions": 52330,
+    "clicks": 349,
+    "conversions": 265,
+    "actual_revenue": 44623,
+    "predicted_baseline": 5666.84,
+    "actual_variance": 38956.16,
+    "variance": 38956.16,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Click-Through Rate",
+        "impact": 1847.5,
+        "description": "High click-through engagement lifting expected revenue"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -42743.72,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -7066.63,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -6004.97,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Click-Through Rate",
+        "impact": 1847.5,
+        "description": "High click-through engagement lifting expected revenue"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -42743.72,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -7066.63,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -6004.97,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1152",
+    "name": "Home - Social Set",
+    "date": "2025-11-19",
+    "channel": "Social",
+    "category": "Home",
+    "spend": 2590.34,
+    "impressions": 10034,
+    "clicks": 9850,
+    "conversions": 852,
+    "actual_revenue": 188215,
+    "predicted_baseline": 220871.67,
+    "actual_variance": -32656.67,
+    "variance": -32656.67,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 105731.07,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 34343.62,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -6670.53,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": -210.84,
+        "description": "Depressed click-through rate signaling ad fatigue or creative mismatch"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 105731.07,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 34343.62,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -6670.53,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": -210.84,
+        "description": "Depressed click-through rate signaling ad fatigue or creative mismatch"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1153",
+    "name": "Sports - App Set",
+    "date": "2025-05-07",
+    "channel": "App",
+    "category": "Sports",
+    "spend": 2279.19,
+    "impressions": 37508,
+    "clicks": 7664,
+    "conversions": 639,
+    "actual_revenue": 138880,
+    "predicted_baseline": 100745.72,
+    "actual_variance": 38134.28,
+    "variance": 38134.28,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 33363.23,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 12824.8,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -32293.12,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -695.43,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 33363.23,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 12824.8,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -32293.12,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -695.43,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1154",
+    "name": "Electronics - Social Set",
+    "date": "2025-11-10",
+    "channel": "Social",
+    "category": "Electronics",
+    "spend": 7863.71,
+    "impressions": 51870,
+    "clicks": 3302,
+    "conversions": 162,
+    "actual_revenue": 33009,
+    "predicted_baseline": 114827.11,
+    "actual_variance": -81818.11,
+    "variance": -81818.11,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 64121.92,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 3020.04,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -10769.9,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -6242.02,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 64121.92,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 3020.04,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -10769.9,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -6242.02,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1155",
+    "name": "Sports - Email Set",
+    "date": "2025-10-15",
+    "channel": "Email",
+    "category": "Sports",
+    "spend": 4207.41,
+    "impressions": 86850,
+    "clicks": 3649,
+    "conversions": 1251,
+    "actual_revenue": 271892,
+    "predicted_baseline": 195668.17,
+    "actual_variance": 76223.83,
+    "variance": 76223.83,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 91723.11,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 10882.08,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 6511.14,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 6439.01,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 91723.11,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 10882.08,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 6511.14,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 6439.01,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1156",
+    "name": "Beauty - App Set",
+    "date": "2025-05-24",
+    "channel": "App",
+    "category": "Beauty",
+    "spend": 7212.48,
+    "impressions": 60793,
+    "clicks": 9065,
+    "conversions": 705,
+    "actual_revenue": 118715,
+    "predicted_baseline": 16812.6,
+    "actual_variance": 101902.4,
+    "variance": 101902.4,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Spend",
+        "impact": 9360.74,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 5758.76,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -60373.67,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -5543.82,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Spend",
+        "impact": 9360.74,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 5758.76,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -60373.67,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -5543.82,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1157",
+    "name": "Electronics - Social Set",
+    "date": "2025-02-11",
+    "channel": "Social",
+    "category": "Electronics",
+    "spend": 857.02,
+    "impressions": 39663,
+    "clicks": 803,
+    "conversions": 1274,
+    "actual_revenue": 259590,
+    "predicted_baseline": 204776.54,
+    "actual_variance": 54813.46,
+    "variance": 54813.46,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 93319.9,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 12453.36,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -947.75,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 11582.77,
+        "description": "Strong category demand momentum boosting baseline potential"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 93319.9,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 12453.36,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -947.75,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 11582.77,
+        "description": "Strong category demand momentum boosting baseline potential"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1158",
+    "name": "Grocery - App Set",
+    "date": "2025-11-08",
+    "channel": "App",
+    "category": "Grocery",
+    "spend": 493.31,
+    "impressions": 73766,
+    "clicks": 9532,
+    "conversions": 1234,
+    "actual_revenue": 259584,
+    "predicted_baseline": 19682.36,
+    "actual_variance": 239901.64,
+    "variance": 239901.64,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 8507.44,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 6328.86,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -67335.78,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -3242.36,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 8507.44,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 6328.86,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -67335.78,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -3242.36,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1159",
+    "name": "Beauty - Social Set",
+    "date": "2025-12-01",
+    "channel": "Social",
+    "category": "Beauty",
+    "spend": 7421.9,
+    "impressions": 74694,
+    "clicks": 4622,
+    "conversions": 1411,
+    "actual_revenue": 237598,
+    "predicted_baseline": 180193.38,
+    "actual_variance": 57404.62,
+    "variance": 57404.62,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 85170.87,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 14266.22,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -7486.7,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": -201.67,
+        "description": "Depressed click-through rate signaling ad fatigue or creative mismatch"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 85170.87,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 14266.22,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -7486.7,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": -201.67,
+        "description": "Depressed click-through rate signaling ad fatigue or creative mismatch"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1160",
+    "name": "Fashion - App Set",
+    "date": "2025-02-04",
+    "channel": "App",
+    "category": "Fashion",
+    "spend": 4814.18,
+    "impressions": 78689,
+    "clicks": 2814,
+    "conversions": 809,
+    "actual_revenue": 168701,
+    "predicted_baseline": 2919.68,
+    "actual_variance": 165781.32,
+    "variance": 165781.32,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 1934.22,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 1105.95,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -65800.64,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -2986.01,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 1934.22,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 1105.95,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -65800.64,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -2986.01,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1161",
+    "name": "Grocery - Social Set",
+    "date": "2025-06-11",
+    "channel": "Social",
+    "category": "Grocery",
+    "spend": 5017.48,
+    "impressions": 42590,
+    "clicks": 9086,
+    "conversions": 22,
+    "actual_revenue": 4628,
+    "predicted_baseline": 37316.68,
+    "actual_variance": -32688.68,
+    "variance": -32688.68,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 38755.21,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 733.08,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -25295.12,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -19784.81,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 38755.21,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 733.08,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -25295.12,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -19784.81,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1162",
+    "name": "Fashion - Email Set",
+    "date": "2025-11-17",
+    "channel": "Email",
+    "category": "Fashion",
+    "spend": 2121.47,
+    "impressions": 59911,
+    "clicks": 7404,
+    "conversions": 230,
+    "actual_revenue": 47962,
+    "predicted_baseline": 122194.4,
+    "actual_variance": -74232.4,
+    "variance": -74232.4,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 65323.36,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 4698.93,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -13490.07,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -5807.86,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 65323.36,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 4698.93,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -13490.07,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -5807.86,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1163",
+    "name": "Electronics - App Set",
+    "date": "2025-08-18",
+    "channel": "App",
+    "category": "Electronics",
+    "spend": 2147.23,
+    "impressions": 73363,
+    "clicks": 335,
+    "conversions": 1438,
+    "actual_revenue": 293007,
+    "predicted_baseline": 1385.57,
+    "actual_variance": 291621.43,
+    "variance": 291621.43,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 2303.53,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 1406.06,
+        "description": "High click-through engagement lifting expected revenue"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -66003.04,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -3424.48,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 2303.53,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 1406.06,
+        "description": "High click-through engagement lifting expected revenue"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -66003.04,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -3424.48,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1164",
+    "name": "Home - Email Set",
+    "date": "2025-06-25",
+    "channel": "Email",
+    "category": "Home",
+    "spend": 2786.27,
+    "impressions": 20087,
+    "clicks": 6721,
+    "conversions": 309,
+    "actual_revenue": 68261,
+    "predicted_baseline": 92481.23,
+    "actual_variance": -24220.23,
+    "variance": -24220.23,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 67935.62,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -18750.54,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -11783.68,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -8415.72,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 67935.62,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -18750.54,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -11783.68,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -8415.72,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1165",
+    "name": "Electronics - Web Set",
+    "date": "2025-04-23",
+    "channel": "Web",
+    "category": "Electronics",
+    "spend": 3273.33,
+    "impressions": 8304,
+    "clicks": 2795,
+    "conversions": 129,
+    "actual_revenue": 26285,
+    "predicted_baseline": 1545.81,
+    "actual_variance": 24739.19,
+    "variance": 24739.19,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 2667.82,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 622.14,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -72969.58,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -1104.59,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 2667.82,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 622.14,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -72969.58,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -1104.59,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1166",
+    "name": "Fashion - Web Set",
+    "date": "2025-03-30",
+    "channel": "Web",
+    "category": "Fashion",
+    "spend": 3083.62,
+    "impressions": 79147,
+    "clicks": 5573,
+    "conversions": 1104,
+    "actual_revenue": 230217,
+    "predicted_baseline": 1394.9,
+    "actual_variance": 228822.1,
+    "variance": 228822.1,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 1510.79,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 1479.88,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -61326.03,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -6378,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 1510.79,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 1479.88,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -61326.03,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -6378,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1167",
+    "name": "Beauty - Web Set",
+    "date": "2025-03-09",
+    "channel": "Web",
+    "category": "Beauty",
+    "spend": 788.59,
+    "impressions": 67063,
+    "clicks": 9497,
+    "conversions": 1028,
+    "actual_revenue": 173105,
+    "predicted_baseline": 985.3,
+    "actual_variance": 172119.7,
+    "variance": 172119.7,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 4335.9,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 2561.58,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -72811.91,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -3523.38,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 4335.9,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 2561.58,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -72811.91,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -3523.38,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1168",
+    "name": "Fashion - App Set",
+    "date": "2025-01-08",
+    "channel": "App",
+    "category": "Fashion",
+    "spend": 1604.05,
+    "impressions": 47079,
+    "clicks": 9297,
+    "conversions": 874,
+    "actual_revenue": 182255,
+    "predicted_baseline": 118639.48,
+    "actual_variance": 63615.52,
+    "variance": 63615.52,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Audience Clicks",
+        "impact": 31287.24,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 27619.11,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -44568.01,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 11812.66,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Audience Clicks",
+        "impact": 31287.24,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 27619.11,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -44568.01,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 11812.66,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1169",
+    "name": "Grocery - Store Set",
+    "date": "2025-10-23",
+    "channel": "Store",
+    "category": "Grocery",
+    "spend": 5616.3,
+    "impressions": 80519,
+    "clicks": 5222,
+    "conversions": 402,
+    "actual_revenue": 84565,
+    "predicted_baseline": 73791.48,
+    "actual_variance": 10773.52,
+    "variance": 10773.52,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 11293.71,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 7337.27,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -16219.31,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": -4219.49,
+        "description": "Depressed click-through rate signaling ad fatigue or creative mismatch"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 11293.71,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 7337.27,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -16219.31,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": -4219.49,
+        "description": "Depressed click-through rate signaling ad fatigue or creative mismatch"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1170",
+    "name": "Home - App Set",
+    "date": "2025-11-09",
+    "channel": "App",
+    "category": "Home",
+    "spend": 5221.39,
+    "impressions": 19914,
+    "clicks": 6008,
+    "conversions": 1050,
+    "actual_revenue": 231956,
+    "predicted_baseline": 955.51,
+    "actual_variance": 231000.49,
+    "variance": 231000.49,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Spend",
+        "impact": 1024.57,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -62457.08,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -3971.95,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -2524.72,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Spend",
+        "impact": 1024.57,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -62457.08,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -3971.95,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -2524.72,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1171",
+    "name": "Fashion - App Set",
+    "date": "2025-08-31",
+    "channel": "App",
+    "category": "Fashion",
+    "spend": 6591.74,
+    "impressions": 53125,
+    "clicks": 565,
+    "conversions": 725,
+    "actual_revenue": 151184,
+    "predicted_baseline": 105583.81,
+    "actual_variance": 45600.19,
+    "variance": 45600.19,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 37027.82,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 9082.38,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -36777.18,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 8282.86,
+        "description": "High click-through engagement lifting expected revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 37027.82,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 9082.38,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -36777.18,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 8282.86,
+        "description": "High click-through engagement lifting expected revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1172",
+    "name": "Beauty - Store Set",
+    "date": "2025-02-08",
+    "channel": "Store",
+    "category": "Beauty",
+    "spend": 3241.61,
+    "impressions": 10256,
+    "clicks": 948,
+    "conversions": 604,
+    "actual_revenue": 101708,
+    "predicted_baseline": 13274.36,
+    "actual_variance": 88433.64,
+    "variance": 88433.64,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Spend",
+        "impact": 1208.96,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -27614.9,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -11652.73,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -9666.45,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Spend",
+        "impact": 1208.96,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -27614.9,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -11652.73,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -9666.45,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1173",
+    "name": "Sports - Email Set",
+    "date": "2025-12-19",
+    "channel": "Email",
+    "category": "Sports",
+    "spend": 2523.88,
+    "impressions": 98659,
+    "clicks": 3151,
+    "conversions": 1147,
+    "actual_revenue": 249289,
+    "predicted_baseline": 178948.83,
+    "actual_variance": 70340.17,
+    "variance": 70340.17,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 86948.7,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 33687.9,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -6778.61,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -4110.44,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 86948.7,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 33687.9,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -6778.61,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -4110.44,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1174",
+    "name": "Sports - Social Set",
+    "date": "2025-09-17",
+    "channel": "Social",
+    "category": "Sports",
+    "spend": 5805.27,
+    "impressions": 9942,
+    "clicks": 8183,
+    "conversions": 321,
+    "actual_revenue": 69766,
+    "predicted_baseline": 132663.65,
+    "actual_variance": -62897.65,
+    "variance": -62897.65,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 76715.71,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 5238.21,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -10700.66,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -8177.57,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 76715.71,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 5238.21,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -10700.66,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -8177.57,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1175",
+    "name": "Fashion - Store Set",
+    "date": "2025-10-18",
+    "channel": "Store",
+    "category": "Fashion",
+    "spend": 1131.9,
+    "impressions": 97426,
+    "clicks": 5313,
+    "conversions": 1437,
+    "actual_revenue": 299658,
+    "predicted_baseline": 125681.04,
+    "actual_variance": 173976.96,
+    "variance": 173976.96,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 54932.24,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 10750.49,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -12564.38,
+        "description": "High spend relative to baseline conversion yield"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -920.1,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 54932.24,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 10750.49,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -12564.38,
+        "description": "High spend relative to baseline conversion yield"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -920.1,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1176",
+    "name": "Beauty - Social Set",
+    "date": "2025-02-27",
+    "channel": "Social",
+    "category": "Beauty",
+    "spend": 2207.97,
+    "impressions": 85226,
+    "clicks": 1156,
+    "conversions": 769,
+    "actual_revenue": 129492,
+    "predicted_baseline": 135815.86,
+    "actual_variance": -6323.86,
+    "variance": -6323.86,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 73260.77,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 14446.71,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -13347.71,
+        "description": "High spend relative to baseline conversion yield"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -6705.33,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 73260.77,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 14446.71,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -13347.71,
+        "description": "High spend relative to baseline conversion yield"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -6705.33,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1177",
+    "name": "Home - Store Set",
+    "date": "2025-04-04",
+    "channel": "Store",
+    "category": "Home",
+    "spend": 5519.92,
+    "impressions": 32717,
+    "clicks": 2023,
+    "conversions": 1328,
+    "actual_revenue": 293368,
+    "predicted_baseline": 26433.92,
+    "actual_variance": 266934.08,
+    "variance": 266934.08,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": -26503.28,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -9343.88,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -3445.69,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -3315.69,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": -26503.28,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -9343.88,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -3445.69,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -3315.69,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1178",
+    "name": "Home - Social Set",
+    "date": "2025-05-01",
+    "channel": "Social",
+    "category": "Home",
+    "spend": 3490.05,
+    "impressions": 91807,
+    "clicks": 1060,
+    "conversions": 1494,
+    "actual_revenue": 330040,
+    "predicted_baseline": 216790.87,
+    "actual_variance": 113249.13,
+    "variance": 113249.13,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 86319.54,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 25638.59,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -1778.22,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 13098.75,
+        "description": "High click-through engagement lifting expected revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 86319.54,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 25638.59,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -1778.22,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 13098.75,
+        "description": "High click-through engagement lifting expected revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1179",
+    "name": "Grocery - App Set",
+    "date": "2025-12-22",
+    "channel": "App",
+    "category": "Grocery",
+    "spend": 1663.15,
+    "impressions": 15668,
+    "clicks": 7799,
+    "conversions": 101,
+    "actual_revenue": 21246,
+    "predicted_baseline": 21783.51,
+    "actual_variance": -537.51,
+    "variance": -537.51,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 9764.32,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 3066.29,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -64505.05,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -2151.88,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 9764.32,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 3066.29,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -64505.05,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -2151.88,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1180",
+    "name": "Sports - Social Set",
+    "date": "2025-08-08",
+    "channel": "Social",
+    "category": "Sports",
+    "spend": 6244.79,
+    "impressions": 5010,
+    "clicks": 9455,
+    "conversions": 1205,
+    "actual_revenue": 261895,
+    "predicted_baseline": 211070.66,
+    "actual_variance": 50824.34,
+    "variance": 50824.34,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 89615.93,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 14818.18,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 14386.3,
+        "description": "High click-through engagement lifting expected revenue"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 11370.29,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 89615.93,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 14818.18,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 14386.3,
+        "description": "High click-through engagement lifting expected revenue"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 11370.29,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1181",
+    "name": "Beauty - Web Set",
+    "date": "2025-03-22",
+    "channel": "Web",
+    "category": "Beauty",
+    "spend": 6104.25,
+    "impressions": 89921,
+    "clicks": 6348,
+    "conversions": 484,
+    "actual_revenue": 81501,
+    "predicted_baseline": 1317.22,
+    "actual_variance": 80183.78,
+    "variance": 80183.78,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 5044.57,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 1831.24,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -71310.82,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -2895.33,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 5044.57,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 1831.24,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -71310.82,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -2895.33,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1182",
+    "name": "Electronics - Social Set",
+    "date": "2025-02-01",
+    "channel": "Social",
+    "category": "Electronics",
+    "spend": 3155.58,
+    "impressions": 17679,
+    "clicks": 9645,
+    "conversions": 1268,
+    "actual_revenue": 258368,
+    "predicted_baseline": 228665.49,
+    "actual_variance": 29702.51,
+    "variance": 29702.51,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 109968.63,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 24030.23,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -183.86,
+        "description": "High spend relative to baseline conversion yield"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 9313.15,
+        "description": "Strong category demand momentum boosting baseline potential"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 109968.63,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 24030.23,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -183.86,
+        "description": "High spend relative to baseline conversion yield"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 9313.15,
+        "description": "Strong category demand momentum boosting baseline potential"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1183",
+    "name": "Electronics - Email Set",
+    "date": "2025-07-26",
+    "channel": "Email",
+    "category": "Electronics",
+    "spend": 1781.72,
+    "impressions": 59382,
+    "clicks": 845,
+    "conversions": 1198,
+    "actual_revenue": 244104,
+    "predicted_baseline": 210132.54,
+    "actual_variance": 33971.46,
+    "variance": 33971.46,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 98669,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 14668.66,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 8806.46,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 8103.46,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 98669,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 14668.66,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 8806.46,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 8103.46,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1184",
+    "name": "Home - Social Set",
+    "date": "2025-01-13",
+    "channel": "Social",
+    "category": "Home",
+    "spend": 5406.2,
+    "impressions": 22942,
+    "clicks": 7400,
+    "conversions": 259,
+    "actual_revenue": 57216,
+    "predicted_baseline": 98145.86,
+    "actual_variance": -40929.86,
+    "variance": -40929.86,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 68747,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -12898.78,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -10401.71,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -8043.33,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 68747,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -12898.78,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -10401.71,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -8043.33,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1185",
+    "name": "Home - App Set",
+    "date": "2025-05-12",
+    "channel": "App",
+    "category": "Home",
+    "spend": 4166.76,
+    "impressions": 92530,
+    "clicks": 230,
+    "conversions": 150,
+    "actual_revenue": 33137,
+    "predicted_baseline": 7062.75,
+    "actual_variance": 26074.25,
+    "variance": 26074.25,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 8611.69,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 2563.73,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -70316.15,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -3312.84,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 8611.69,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 2563.73,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -70316.15,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -3312.84,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1186",
+    "name": "Fashion - App Set",
+    "date": "2025-05-31",
+    "channel": "App",
+    "category": "Fashion",
+    "spend": 7826.04,
+    "impressions": 92266,
+    "clicks": 2300,
+    "conversions": 292,
+    "actual_revenue": 60891,
+    "predicted_baseline": 20929.18,
+    "actual_variance": 39961.82,
+    "variance": 39961.82,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 12134.71,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 5632.29,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -64852.79,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -4262.33,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 12134.71,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 5632.29,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -64852.79,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -4262.33,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1187",
+    "name": "Electronics - Email Set",
+    "date": "2025-06-19",
+    "channel": "Email",
+    "category": "Electronics",
+    "spend": 1122.3,
+    "impressions": 67044,
+    "clicks": 1472,
+    "conversions": 717,
+    "actual_revenue": 146096,
+    "predicted_baseline": 136586.15,
+    "actual_variance": 9509.85,
+    "variance": 9509.85,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 63082.1,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 11258.35,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -7835.26,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -4780.66,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 63082.1,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 11258.35,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -7835.26,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -4780.66,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1188",
+    "name": "Fashion - App Set",
+    "date": "2025-04-22",
+    "channel": "App",
+    "category": "Fashion",
+    "spend": 6218.47,
+    "impressions": 44307,
+    "clicks": 9266,
+    "conversions": 402,
+    "actual_revenue": 83829,
+    "predicted_baseline": 58713.64,
+    "actual_variance": 25115.36,
+    "variance": 25115.36,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Audience Clicks",
+        "impact": 28180.04,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 6762.63,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -53297.66,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -2155.73,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Audience Clicks",
+        "impact": 28180.04,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 6762.63,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -53297.66,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -2155.73,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1189",
+    "name": "Grocery - App Set",
+    "date": "2025-05-06",
+    "channel": "App",
+    "category": "Grocery",
+    "spend": 1305.46,
+    "impressions": 7999,
+    "clicks": 7798,
+    "conversions": 1381,
+    "actual_revenue": 290507,
+    "predicted_baseline": 5649.44,
+    "actual_variance": 284857.56,
+    "variance": 284857.56,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 8692.95,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 3356.35,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -71337.42,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -4081.04,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 8692.95,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 3356.35,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -71337.42,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -4081.04,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1190",
+    "name": "Grocery - Social Set",
+    "date": "2025-10-05",
+    "channel": "Social",
+    "category": "Grocery",
+    "spend": 5105.38,
+    "impressions": 12475,
+    "clicks": 3871,
+    "conversions": 1196,
+    "actual_revenue": 251591,
+    "predicted_baseline": 193547.38,
+    "actual_variance": 58043.62,
+    "variance": 58043.62,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 89860.37,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 8766.73,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": -1165.14,
+        "description": "Depressed click-through rate signaling ad fatigue or creative mismatch"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 8522.68,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 89860.37,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 8766.73,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": -1165.14,
+        "description": "Depressed click-through rate signaling ad fatigue or creative mismatch"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 8522.68,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1191",
+    "name": "Sports - Store Set",
+    "date": "2025-02-01",
+    "channel": "Store",
+    "category": "Sports",
+    "spend": 5710.6,
+    "impressions": 32369,
+    "clicks": 7259,
+    "conversions": 582,
+    "actual_revenue": 126492,
+    "predicted_baseline": 83673.12,
+    "actual_variance": 42818.88,
+    "variance": 42818.88,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Spend",
+        "impact": 7808.96,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 6659.62,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -7115.98,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -2423.12,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Spend",
+        "impact": 7808.96,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 6659.62,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -7115.98,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -2423.12,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1192",
+    "name": "Electronics - Store Set",
+    "date": "2025-02-05",
+    "channel": "Store",
+    "category": "Electronics",
+    "spend": 3571.49,
+    "impressions": 92569,
+    "clicks": 2180,
+    "conversions": 428,
+    "actual_revenue": 87209,
+    "predicted_baseline": 82891.77,
+    "actual_variance": 4317.23,
+    "variance": 4317.23,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 9938.91,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 8146.74,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -18577.82,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 8006.22,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 9938.91,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": 8146.74,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -18577.82,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 8006.22,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1193",
+    "name": "Sports - Web Set",
+    "date": "2025-10-17",
+    "channel": "Web",
+    "category": "Sports",
+    "spend": 2994.01,
+    "impressions": 51763,
+    "clicks": 6989,
+    "conversions": 236,
+    "actual_revenue": 51292,
+    "predicted_baseline": 1237.52,
+    "actual_variance": 50054.48,
+    "variance": 50054.48,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Audience Clicks",
+        "impact": 1379.74,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 524,
+        "description": "High click-through engagement lifting expected revenue"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -64050.02,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -4620.75,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Audience Clicks",
+        "impact": 1379.74,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 524,
+        "description": "High click-through engagement lifting expected revenue"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -64050.02,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": -4620.75,
+        "description": "Elevated cost per click increasing capital acquisition friction"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1194",
+    "name": "Home - Web Set",
+    "date": "2025-11-25",
+    "channel": "Web",
+    "category": "Home",
+    "spend": 1277.27,
+    "impressions": 32813,
+    "clicks": 6413,
+    "conversions": 1413,
+    "actual_revenue": 312146,
+    "predicted_baseline": 1540.91,
+    "actual_variance": 310605.09,
+    "variance": 310605.09,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 2876.68,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 958.23,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -72589.23,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -2081.99,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Cost Per Click",
+        "impact": 2876.68,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 958.23,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -72589.23,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -2081.99,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1195",
+    "name": "Grocery - Social Set",
+    "date": "2025-09-04",
+    "channel": "Social",
+    "category": "Grocery",
+    "spend": 2393.22,
+    "impressions": 54266,
+    "clicks": 9618,
+    "conversions": 1350,
+    "actual_revenue": 283986,
+    "predicted_baseline": 256977.27,
+    "actual_variance": 27008.73,
+    "variance": 27008.73,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 104058.06,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 47923.3,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 11289.69,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 6902.29,
+        "description": "High click-through engagement lifting expected revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 104058.06,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Cost Per Click",
+        "impact": 47923.3,
+        "description": "Cost-efficient click acquisition maintaining healthy margin headroom"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 11289.69,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Click-Through Rate",
+        "impact": 6902.29,
+        "description": "High click-through engagement lifting expected revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1196",
+    "name": "Grocery - Social Set",
+    "date": "2025-04-16",
+    "channel": "Social",
+    "category": "Grocery",
+    "spend": 6287.58,
+    "impressions": 33771,
+    "clicks": 4975,
+    "conversions": 896,
+    "actual_revenue": 188483,
+    "predicted_baseline": 171880.69,
+    "actual_variance": 16602.31,
+    "variance": 16602.31,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 87009.36,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 13323.86,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -11171.28,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 3758.25,
+        "description": "Strong category demand momentum boosting baseline potential"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 87009.36,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 13323.86,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -11171.28,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Product Category",
+        "impact": 3758.25,
+        "description": "Strong category demand momentum boosting baseline potential"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1197",
+    "name": "Grocery - Social Set",
+    "date": "2025-06-30",
+    "channel": "Social",
+    "category": "Grocery",
+    "spend": 7853,
+    "impressions": 42608,
+    "clicks": 8461,
+    "conversions": 457,
+    "actual_revenue": 96135,
+    "predicted_baseline": 131383.33,
+    "actual_variance": -35248.33,
+    "variance": -35248.33,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 69054.67,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 4878.73,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -9218.33,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -5375.5,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 69054.67,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": 4878.73,
+        "description": "Strong qualified traffic volume driving high-intent conversion potential"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -9218.33,
+        "description": "High impression saturation with diminishing conversion returns"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -5375.5,
+        "description": "High spend relative to baseline conversion yield"
+      }
+    ],
+    "is_anomaly": true,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1198",
+    "name": "Electronics - Store Set",
+    "date": "2025-04-13",
+    "channel": "Store",
+    "category": "Electronics",
+    "spend": 6304.31,
+    "impressions": 76078,
+    "clicks": 6039,
+    "conversions": 607,
+    "actual_revenue": 123682,
+    "predicted_baseline": 40764.71,
+    "actual_variance": 82917.29,
+    "variance": 82917.29,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 7885.48,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 7097.16,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -27094.24,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -7790.26,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Product Category",
+        "impact": 7885.48,
+        "description": "Strong category demand momentum boosting baseline potential"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 7097.16,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -27094.24,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Ad Impressions",
+        "impact": -7790.26,
+        "description": "High impression saturation with diminishing conversion returns"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1199",
+    "name": "Beauty - Web Set",
+    "date": "2025-06-06",
+    "channel": "Web",
+    "category": "Beauty",
+    "spend": 7334.54,
+    "impressions": 96093,
+    "clicks": 2511,
+    "conversions": 1239,
+    "actual_revenue": 208635,
+    "predicted_baseline": 747.54,
+    "actual_variance": 207887.46,
+    "variance": 207887.46,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 5966.54,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 723.19,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -68094.28,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -3808.61,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Ad Impressions",
+        "impact": 5966.54,
+        "description": "Broad ad delivery expanding top-of-funnel reach"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": 723.19,
+        "description": "Healthy budget allocation expanding brand footprint and customer acquisition"
+      },
+      {
+        "feature": "Marketing Channel",
+        "impact": -68094.28,
+        "description": "Channel conversion rate lagging behind omnichannel benchmark"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -3808.61,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  },
+  {
+    "campaign_id": "CA1200",
+    "name": "Beauty - Social Set",
+    "date": "2025-06-30",
+    "channel": "Social",
+    "category": "Beauty",
+    "spend": 2709.12,
+    "impressions": 7465,
+    "clicks": 434,
+    "conversions": 539,
+    "actual_revenue": 90762,
+    "predicted_baseline": 91696.4,
+    "actual_variance": -934.4,
+    "variance": -934.4,
+    "mae": 50594.87,
+    "rmse": 77637.59,
+    "shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 59690.57,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -9083.25,
+        "description": "High spend relative to baseline conversion yield"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -7638.2,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -7043.24,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "top_shap_explanations": [
+      {
+        "feature": "Marketing Channel",
+        "impact": 59690.57,
+        "description": "High-affinity marketing channel matching buyer intent"
+      },
+      {
+        "feature": "Ad Spend",
+        "impact": -9083.25,
+        "description": "High spend relative to baseline conversion yield"
+      },
+      {
+        "feature": "Audience Clicks",
+        "impact": -7638.2,
+        "description": "Sub-baseline audience click volume limiting qualified buyer traffic"
+      },
+      {
+        "feature": "Product Category",
+        "impact": -7043.24,
+        "description": "Category margin compression and stockout resistance dragging revenue"
+      }
+    ],
+    "is_anomaly": false,
+    "is_paused": false,
+    "source": "ml_live_bridge"
+  }
+]

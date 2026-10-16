@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Boxes, AlertTriangle, Clock, ShieldAlert, ArrowRight, CheckCircle2, RotateCw } from "lucide-react";
+import { getApiBase } from "../config.js";
 
 export default function InventoryRiskView({ onTogglePauseCategory }) {
   const [risks, setRisks] = useState([]);
@@ -9,7 +10,7 @@ export default function InventoryRiskView({ onTogglePauseCategory }) {
   const fetchRisks = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3000/api/inventory-risk");
+      const res = await fetch(`${getApiBase()}/api/inventory-risk`);
       if (!res.ok) throw new Error("API error");
       const data = await res.json();
       setRisks(data.risks || []);
