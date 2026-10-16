@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DashboardLayout from "./components/DashboardLayout.jsx";
 import HomePage from "./components/HomePage.jsx";
+import Dashboard from "./components/Dashboard.jsx";
 import AlertFeed, { MOCK_ALERTS } from "./components/AlertFeed.jsx";
 import RootCausePanel from "./components/RootCausePanel.jsx";
 import OverviewView from "./components/OverviewView.jsx";
@@ -162,55 +163,9 @@ export default function App() {
         />
       )}
 
-      {/* Tab 2: Smart Alert Feed (Core Product) */}
+      {/* Tab 2: Dynamic "Why This Is Flagged" Dashboard (Round 2 Upgraded) */}
       {activeTab === "anomalies" && (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2">
-            <AlertFeed
-              alerts={alerts}
-              onInvestigate={handleInvestigate}
-              onRefresh={fetchAnomalies}
-              loading={loading}
-            />
-          </div>
-
-          <div className="space-y-6">
-            <div className="p-5 rounded-xl bg-white border border-slate-200 shadow-xs space-y-4">
-              <h3 className="text-xs font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-blue-600" />
-                Operations Telemetry
-              </h3>
-              
-              <p className="text-xs text-slate-600 leading-relaxed">
-                The Money Leak engine cross-references transaction volume against real-time ad spend and inventory stockout signals.
-              </p>
-
-              <div className="space-y-2 pt-1">
-                <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                  <span className="text-slate-600">Total Monitored SKUs</span>
-                  <span className="font-mono font-bold text-slate-900">250 Products</span>
-                </div>
-                <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                  <span className="text-slate-600">Active Ad Campaigns</span>
-                  <span className="font-mono font-bold text-slate-900">1,200 Sets</span>
-                </div>
-                <div className="flex justify-between items-center text-xs p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                  <span className="text-slate-600">Analyzed Transactions</span>
-                  <span className="font-mono font-bold text-slate-900">18,000 Records</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-5 rounded-xl bg-blue-50/50 border border-blue-200/80 shadow-xs space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-blue-700 font-mono">
-                Quick Action Guide
-              </span>
-              <p className="text-xs text-slate-700 leading-relaxed">
-                Click <strong>"Investigate Drivers"</strong> on any alert card to launch the SHAP Explainability modal, evaluate feature weights, and dispatch autonomous remediation.
-              </p>
-            </div>
-          </div>
-        </div>
+        <Dashboard />
       )}
 
       {/* Tab 3: Inventory Risk */}
